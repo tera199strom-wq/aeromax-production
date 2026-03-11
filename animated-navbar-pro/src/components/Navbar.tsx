@@ -98,7 +98,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between lg:justify-start h-16 lg:h-auto">
         <a className="py-2 pl-0 pr-4 flex items-center" href="#">
           <img 
-            src="/aeromax-1_page-0001.jpg" 
+            src="https://raw.githubusercontent.com/tera199strom-wq/aeromax-production/refs/heads/main/animated-navbar-pro/aeromax-1_page-0001.jpg" 
             alt="Aeromax Production" 
             className="h-9 w-auto object-contain rounded-lg shadow-sm"
           />
