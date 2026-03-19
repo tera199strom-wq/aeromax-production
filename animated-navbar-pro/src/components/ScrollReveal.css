@@ -1,0 +1,11 @@
+.scroll-reveal {
+  margin: 0;
+}
+
+.scroll-reveal-text {
+  /* Let Tailwind handle font size and weight */
+}
+
+.word {
+  display: inline-block;
+}

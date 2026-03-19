@@ -1,0 +1,73 @@
+.list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  contain: layout;
+}
+
+.item-wrapper {
+  position: absolute;
+  will-change: transform, opacity;
+  padding: 6px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  transition: z-index 0.3s;
+}
+
+.item-wrapper > .item-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.15);
+  background: #f1f5f9;
+  overflow: hidden;
+}
+
+.item-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+/* Lightbox styles */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: zoom-out;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+}
